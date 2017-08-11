@@ -26,6 +26,7 @@
 		717ACF361E49A0D9003453AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717ACF351E49A0D9003453AA /* Assets.xcassets */; };
 		717ACF391E49A0DA003453AA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717ACF371E49A0DA003453AA /* MainMenu.xib */; };
 		71C62F4D1E4B1B4E009B5C83 /* MacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C62F4C1E4B1B4E009B5C83 /* MacViewController.swift */; };
+		71D25AEA1F3DE035006F765C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 71D25AE91F3DE035006F765C /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		717ACF381E49A0DA003453AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		717ACF3A1E49A0DA003453AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71C62F4C1E4B1B4E009B5C83 /* MacViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacViewController.swift; sourceTree = "<group>"; };
+		71D25AE91F3DE035006F765C /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		71DD42501F3DB6A300C15BED /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		71DD42511F3DB6A300C15BED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +194,7 @@
 				717ACF351E49A0D9003453AA /* Assets.xcassets */,
 				717ACF371E49A0DA003453AA /* MainMenu.xib */,
 				717ACF3A1E49A0DA003453AA /* Info.plist */,
+				71D25AE91F3DE035006F765C /* Credits.rtf */,
 			);
 			path = "PlateCodes Mac";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				717ACF361E49A0D9003453AA /* Assets.xcassets in Resources */,
+				71D25AEA1F3DE035006F765C /* Credits.rtf in Resources */,
 				717ACF391E49A0DA003453AA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

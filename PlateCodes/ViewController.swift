@@ -34,7 +34,10 @@ class ViewController: UIViewController {
     let searchSpaces = [
         "Embassy codes in Beijing",
         "Provinces in China",
-        "Provinces in Italy"
+        "Provinces in Italy",
+        "Embassy codes in Germany",
+        "German Kfz-Zulassungsbehörden",
+        "Swiss cantons"
     ]
 
     override func viewDidLoad() {
@@ -42,6 +45,11 @@ class ViewController: UIViewController {
             self.searchSpaceLabel.text = "Searching: " + self.searchSpaces[self.delegate.currentSearchSpace]
         })
     }
+
+	func setSearchSpace(_ space: Int) {
+		delegate.currentSearchSpace = space
+		searchSpaceLabel.text = "Searching: " + self.searchSpaces[space]
+	}
 
     @IBAction func goSearch(_ sender: AnyObject) {
         var results = ""
@@ -67,21 +75,15 @@ class ViewController: UIViewController {
 
     @IBAction func changeSearchSpace(_ sender: AnyObject) {
         let actionSheet = UIAlertController(title: "Select a search space", message: "", preferredStyle: .actionSheet)
-        actionSheet.addAction(UIAlertAction(title: searchSpaces[0], style: .default, handler: { _ in
-            self.delegate.currentSearchSpace = 0
-            self.searchSpaceLabel.text = "Searching: " + self.searchSpaces[0]
-        }))
-        actionSheet.addAction(UIAlertAction(title: searchSpaces[1], style: .default, handler: { _ in
-            self.delegate.currentSearchSpace = 1
-            self.searchSpaceLabel.text = "Searching: " + self.searchSpaces[1]
-        }))
-        actionSheet.addAction(UIAlertAction(title: searchSpaces[2], style: .default, handler: { _ in
-            self.delegate.currentSearchSpace = 2
-            self.searchSpaceLabel.text = "Searching: " + self.searchSpaces[2]
-        }))
+		for i in 0...searchSpaces.count {
+			actionSheet.addAction(UIAlertAction(title: searchSpaces[i], style: .default, handler: { _ in
+				self.setSearchSpace(i)
+			}))
+		}
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         present(actionSheet, animated: true, completion: { _ in
             self.searchResults.text = ""
+			self.searchField.text = ""
         })
         goSearch(NSNull())
     }

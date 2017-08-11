@@ -2,33 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.Arc676.PlateCodes.ITProvincesShortcut</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Italian Provinces</string>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string>Shortcut2.png</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.Arc676.PlateCodes.CNProvincesShortcut</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Chinese Provinces</string>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string>Shortcut1.png</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.Arc676.PlateCodes.EmbassiesShortcut</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Beijing Embassies</string>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string>Shortcut0.png</string>
-		</dict>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -42,13 +15,40 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>2.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>Shortcut2.png</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Italian Provinces</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.Arc676.PlateCodes.ITProvincesShortcut</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>Shortcut1.png</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Chinese Provinces</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.Arc676.PlateCodes.CNProvincesShortcut</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>Shortcut0.png</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Beijing Embassies</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.Arc676.PlateCodes.EmbassiesShortcut</string>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

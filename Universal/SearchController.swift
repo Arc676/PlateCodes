@@ -23,7 +23,7 @@ import Foundation
 
 class SearchController: AnyObject {
 
-    class func search(searchRegex: String, ignoreCase: Bool, searchSpace: Int) -> String{
+    class func search(searchRegex: String, ignoreCase: Bool, searchSpace: Int) -> String {
         var query = searchRegex
         var results = ""
         if query.characters.count == 0 {

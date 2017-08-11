@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,8 +15,6 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="PlateCodes_Mac" customModuleProvider="target">
             <connections>
-                <outlet property="AboutPanel" destination="On2-tw-AfX" id="KAz-g6-t4i"/>
-                <outlet property="aboutPanel" destination="On2-tw-AfX" id="H0n-E1-HIQ"/>
                 <outlet property="view" destination="EiT-Mj-1SZ" id="RPZ-5t-570"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -31,7 +29,7 @@
                             <menuItem title="About PlateCodes" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="showAboutWithSender:" target="Voe-Tx-rLC" id="m8W-mf-SLz"/>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Te5-Za-TSU"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -328,7 +326,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="439"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ" customClass="MacViewController" customModule="PlateCodes_Mac" customModuleProvider="target">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="439"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -400,6 +398,15 @@
                                     <menuItem title="Embassies in Beijing" state="on" id="Zhb-Ne-wch"/>
                                     <menuItem title="Provinces in China" id="HTV-9o-M2c"/>
                                     <menuItem title="Provinces in Italy" id="pIw-Dp-L8E"/>
+                                    <menuItem title="Embassies in Germany" id="LPi-ia-zTb">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="German Kfz-Zulassungsbehörden" id="caj-8n-WhN">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Swiss cantons" id="AHY-bI-u6T">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>
@@ -425,67 +432,5 @@
             </view>
             <point key="canvasLocation" x="132" y="186.5"/>
         </window>
-        <window title="About PlateCodes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="On2-tw-AfX" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="120" y="68" width="367" height="414"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
-            <view key="contentView" id="55X-aJ-Let">
-                <rect key="frame" x="0.0" y="0.0" width="367" height="414"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCb-eB-dBu">
-                        <rect key="frame" x="18" y="326" width="331" height="68"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="s1j-S3-fHO">
-                            <font key="font" metaFont="system"/>
-                            <string key="title">All the content in this application is available under Wikipedia's Creative Commons License (Text of Creative Commons Attribution-ShareAlike 3.0 Unported License).</string>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVe-s7-N7h">
-                        <rect key="frame" x="18" y="250" width="331" height="68"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="Ob8-Hs-PfA">
-                            <font key="font" metaFont="system"/>
-                            <string key="title">This means you are free to share and adapt the work under the condition that you attribute the source. You also must distribute the result under the same, similar, or compatible license.</string>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cy2-mk-sdv">
-                        <rect key="frame" x="156" y="225" width="54" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sources" id="vOH-PN-7Rp">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40R-hx-lTO">
-                        <rect key="frame" x="20" y="161" width="327" height="56"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" controlSize="mini" lineBreakMode="charWrapping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="P7H-ac-kDV">
-                            <font key="font" metaFont="system"/>
-                            <string key="title">Vehicle Registration Plates of China - Wikipedia
-
-Vehicle Registration Plates of Italy - Wikipedia</string>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7h-qd-ITY">
-                        <rect key="frame" x="20" y="20" width="327" height="132"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="AttributionIcon" id="8GA-Do-vYU"/>
-                    </imageView>
-                </subviews>
-            </view>
-            <point key="canvasLocation" x="589.5" y="448"/>
-        </window>
     </objects>
-    <resources>
-        <image name="AttributionIcon" width="242" height="121"/>
-    </resources>
 </document>

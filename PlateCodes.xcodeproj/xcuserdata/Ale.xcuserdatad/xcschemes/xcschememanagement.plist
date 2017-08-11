@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>PlateCodes Mac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PlateCodes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7155E77D1C48F8DF009F2A04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7155E7911C48F8DF009F2A04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7155E79C1C48F8DF009F2A04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>717ACF301E49A0D9003453AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

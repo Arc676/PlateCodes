@@ -3,8 +3,16 @@
 //  PlateCodes
 //
 //  Created by Alessandro Vinciguerra on 1/16/16.
-//  Copyright © 2016 Arc676. All rights reserved.
-//
+//  Copyright © 2016-2017 Arc676/Alessandro Vinciguerra. All rights reserved.
+//  Text in just this file available under Wikipedia's Creative Commons License
+//  (Text of Creative Commons Attribution-ShareAlike 3.0 Unported License).
+
+//MARK: - Sources
+//https://en.wikipedia.org/w/index.php?title=Vehicle_registration_plates_of_China
+//https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Italy
+//https://de.wikipedia.org/wiki/Diplomatenkennzeichen_(Deutschland)
+//https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Switzerland
+//https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland
 
 import Foundation
 
@@ -706,7 +714,12 @@ class SearchableData {
             "VB - Verbania",
             "VS - Medio Campidano"
         ],
-		[ //MARK: Berlin/Bonn embassies
+		[ //MARK: Diplomatenkennzeichen; Berlin/Bonn embassies
+			"0-1 - Bundespräsident",
+			"0-2 - Bundeskanzler",
+			"0-3 - Außenminister",
+			"0-4 - Erster Staatssekretär im Auswärtigen Amt",
+			"1-1 - Bundestagspräsident",
 			"10 - Vatikanstadt",
 			"11 - Ägypten",
 			"12 - Angola",
@@ -870,6 +883,36 @@ class SearchableData {
 			"203 - Guinea-Bissau",
 			"204 - Südsudan",
 			"205 - Botswana"
+		],
+		[ //MARK: Kraftfahrzeug-Zulassungsbehörden; German registration offices
+		],
+		[ //MARK: Swiss cantons
+			"AG - Aargau",
+			"AI - Appenzell Innerrhoden",
+			"AR - Appenzell Ausserrhoden",
+			"BE - Bern",
+			"BL - Basel-Landschaft",
+			"BS - Basel-Stadt",
+			"FR - Fribourg",
+			"GE - Geneva",
+			"GL - Glarus",
+			"GR - Graubünden",
+			"JU - Jura",
+			"LU - Lucerne",
+			"NE - Neuchâtel",
+			"NW - Nidwalden",
+			"OW - Obwalden",
+			"SG - St. Gallen",
+			"SH - Schaffhausen",
+			"SO - Solothurn",
+			"SZ - Schwyz",
+			"TG - Thurgau",
+			"TI - Ticino",
+			"UR - Uri",
+			"VD - Vaud",
+			"VS - Valais",
+			"ZG - Zug",
+			"ZH - Zürich"
 		]
     ]
 }

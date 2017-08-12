@@ -27,12 +27,12 @@ class SearchController: AnyObject {
         var query = searchRegex
         var results = ""
         if query.characters.count == 0 {
-            return SearchableData.searchItems[searchSpace].joined(separator: "\n")
+            return SearchableData.searchItems(searchSpace).joined(separator: "\n")
         }
         if ignoreCase {
             query = "(?i)" + query
         }
-        for code in SearchableData.searchItems[searchSpace] {
+        for code in SearchableData.searchItems(searchSpace) {
             if code.range(of: query, options: .regularExpression) != nil {
                 results += code + "\n"
             }

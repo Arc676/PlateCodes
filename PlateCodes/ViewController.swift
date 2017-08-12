@@ -41,9 +41,7 @@ class ViewController: UIViewController {
     ]
 
     override func viewDidLoad() {
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: nil, queue: nil, using: { _ in
-            self.searchSpaceLabel.text = "Searching: " + self.searchSpaces[self.delegate.currentSearchSpace]
-        })
+		self.searchSpaceLabel.text = "Searching: " + self.searchSpaces[self.delegate.currentSearchSpace]
     }
 
 	func setSearchSpace(_ space: Int) {
@@ -52,21 +50,11 @@ class ViewController: UIViewController {
 	}
 
     @IBAction func goSearch(_ sender: AnyObject) {
-        var results = ""
-        var query = searchField.text!
-        if query.characters.count == 0 {
-            searchResults.text = ""
-            return
-        }
-        if ignoreCase.isOn {
-            query = "(?i)" + query
-        }
-        for code in SearchableData.searchItems[delegate.currentSearchSpace] {
-            if code.range(of: query, options: .regularExpression) != nil {
-                results += code + "\n"
-            }
-        }
-        searchResults.text = results
+		searchResults.text = SearchController.search(
+			searchRegex: searchField.text!,
+			ignoreCase: ignoreCase.isOn,
+			searchSpace: self.delegate.currentSearchSpace)
+		searchResults.font = UIFont(name: "Helvetica", size: 13)
     }
 
     @IBAction func doneEditing(_ sender: AnyObject) {
@@ -75,7 +63,7 @@ class ViewController: UIViewController {
 
     @IBAction func changeSearchSpace(_ sender: AnyObject) {
         let actionSheet = UIAlertController(title: "Select a search space", message: "", preferredStyle: .actionSheet)
-		for i in 0...searchSpaces.count {
+		for i in 0..<searchSpaces.count {
 			actionSheet.addAction(UIAlertAction(title: searchSpaces[i], style: .default, handler: { _ in
 				self.setSearchSpace(i)
 			}))

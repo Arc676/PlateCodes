@@ -74,7 +74,7 @@
 		71C62F4C1E4B1B4E009B5C83 /* MacViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacViewController.swift; sourceTree = "<group>"; };
 		71D25AE91F3DE035006F765C /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		71DD42501F3DB6A300C15BED /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		71DD42511F3DB6A300C15BED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		71DD42511F3DB6A300C15BED /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				71DD42501F3DB6A300C15BED /* LICENSE */,
-				71DD42511F3DB6A300C15BED /* README.md */,
+				71DD42511F3DB6A300C15BED /* README.txt */,
 			);
 			name = Meta;
 			sourceTree = "<group>";

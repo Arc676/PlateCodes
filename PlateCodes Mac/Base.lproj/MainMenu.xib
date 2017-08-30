@@ -407,6 +407,9 @@
                                     <menuItem title="Swiss cantons" id="AHY-bI-u6T">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
+                                    <menuItem title="French departments" id="Rqx-dP-KPb">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>

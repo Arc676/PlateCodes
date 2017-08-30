@@ -8,6 +8,7 @@ Supported search spaces:
 	Embassies in Berlin and Bonn, Germany
 	German Kraftfahrzeug-Zulassungsbehörden (registration offices for motor vehicles in Germany)
 	Swiss cantons
+	French departments
 
 Maybe coming soon, maybe not:
 	France's subdivisions
@@ -26,3 +27,4 @@ https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Italy
 https://de.wikipedia.org/wiki/Diplomatenkennzeichen_(Deutschland)
 https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Switzerland
 https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland
+https://en.wikipedia.org/wiki/Departments_of_France

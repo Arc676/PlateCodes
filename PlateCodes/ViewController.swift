@@ -37,7 +37,8 @@ class ViewController: UIViewController {
         "Provinces in Italy",
         "Embassy codes in Germany",
         "German Kfz-Zulassungsbehörden",
-        "Swiss cantons"
+        "Swiss cantons",
+        "French departments"
     ]
 
     override func viewDidLoad() {

@@ -10,9 +10,6 @@ Supported search spaces:
 	Swiss cantons
 	French departments
 
-Maybe coming soon, maybe not:
-	France's subdivisions
-
 Project under GPLv3. See LICENSE for full GPL text.
 
 Information about the license plate codes/abbreviations/etc. obtained from Wikipedia.
